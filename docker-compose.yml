@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "3000:3000"
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
